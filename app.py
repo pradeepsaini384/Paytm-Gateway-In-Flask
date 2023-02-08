@@ -1,18 +1,18 @@
 from flask import Flask,render_template,Response,request
 import Checksum
 app = Flask(__name__)
-MERCHANT_KEY = 'txD2tlHax&ls%3pt'
+MERCHANT_KEY = 'your_marchant_key'
 @app.route('/')
 def home():
     return render_template('index.html')
 @app.route('/start')
 def start():
     param_dict = {
-
-                'MID': 'obQIPX90562701803310',
-                'ORDER_ID': '21',
+            #   this is demo data like order id cust_id
+                'MID': 'your_marchent_id',
+                'ORDER_ID': '1',
                 'TXN_AMOUNT': '1',
-                'CUST_ID': 'pradeepsaini384@gmail.com',
+                'CUST_ID': '1,
                 'INDUSTRY_TYPE_ID': 'WEBSTAGING',
                 'WEBSITE': 'Retail',
                 'CHANNEL_ID': 'WEB',
